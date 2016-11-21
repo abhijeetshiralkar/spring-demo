@@ -11,7 +11,7 @@ public class BookApplication {
 
   @RequestMapping(value = "/available")
   public String available() {
-    return "Spring Microservices in Action";
+    return "Spring in Action";
   }
 
   @RequestMapping(value = "/checked-out")
