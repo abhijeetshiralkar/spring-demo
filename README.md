@@ -1,2 +1,2 @@
 # spring-demo
-Repository created for Sprind demo with netflix
+Repository created for Spring cloud demo with netflix
