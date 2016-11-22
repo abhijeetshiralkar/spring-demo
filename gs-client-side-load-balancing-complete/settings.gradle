@@ -1,4 +1,0 @@
-rootProject.name = 'gs-client-side-load-balancing'
-
-include 'say-hello'
-include 'user'
