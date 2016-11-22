@@ -10,6 +10,7 @@ import hello.filters.pre.SimplePostFilter;
 
 @EnableZuulProxy
 @SpringBootApplication
+@EnableDiscoveryClient
 public class GatewayApplication {
 
   public static void main(String[] args) {
