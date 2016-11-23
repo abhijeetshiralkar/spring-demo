@@ -1,5 +1,9 @@
 package hello;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -13,12 +17,16 @@ public class BookApplication {
 
 	@RequestMapping(value = "/available")
 	public String available() {
-		return "Book available is Spring in Action";
+		System.out.println("Available method is called");
+		final DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		return "Book available is Spring in Action on " + dateFormat.format(new Date());
 	}
 
 	@RequestMapping(value = "/checked-out")
 	public String checkedOut() {
-		return "Book checked out is Spring Boot in Action";
+		System.out.println("Checked out method is called");
+		final DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		return "Book checked out is Spring Boot in Action" + dateFormat.format(new Date());
 	}
 
 	public static void main(String[] args) {
