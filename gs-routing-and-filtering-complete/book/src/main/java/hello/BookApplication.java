@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class BookApplication {
 
-  @RequestMapping(value = "/available")
-  public String available() {
-    return "Spring in Action";
-  }
+	@RequestMapping(value = "/available")
+	public String available() {
+		return "Book available is Spring in Action";
+	}
 
-  @RequestMapping(value = "/checked-out")
-  public String checkedOut() {
-    return "Spring Boot in Action";
-  }
+	@RequestMapping(value = "/checked-out")
+	public String checkedOut() {
+		return "Book checked out is Spring Boot in Action";
+	}
 
-  public static void main(String[] args) {
-    SpringApplication.run(BookApplication.class, args);
-  }
+	public static void main(String[] args) {
+		SpringApplication.run(BookApplication.class, args);
+	}
 }
