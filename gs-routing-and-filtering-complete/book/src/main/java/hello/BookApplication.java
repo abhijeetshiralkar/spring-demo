@@ -1,3 +1,6 @@
+/**
+ * Comment
+ */
 package hello;
 
 import java.text.DateFormat;
